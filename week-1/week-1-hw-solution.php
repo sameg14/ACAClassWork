@@ -62,26 +62,6 @@ foreach ($wordArray as $word) {
         default:
             throw new Exception('Its something else!');
     }
-
-
-
-//    if (is_numeric($word)) {
-//
-//        ++$countArray['num_numeric'];
-//        // echo $word . ' is a number' . PHP_EOL;
-//
-//    } elseif ($word == 'true' || $word == 'false') {
-//
-//        ++$countArray['num_bool'];
-//        // echo $word . ' is a boolean' . PHP_EOL;
-//
-//    } elseif (is_string($word)) {
-//
-//        ++$countArray['num_string'];
-//        // echo $word . ' is a string' . PHP_EOL;
-//    } else {
-//        // echo $word . ' is something else!' . PHP_EOL;
-//    }
 }
 
  echo '<pre>';
