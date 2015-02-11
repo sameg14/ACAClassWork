@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class WelcomeController extends Controller {
 
 	/*
@@ -28,9 +30,14 @@ class WelcomeController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+
+	/**
+	 * @param Request $request
+	 * @return \Illuminate\View\View
+	 */
+	public function index(Request $request)
 	{
-		return view('welcome');
+		return view('welcome', ['name' => 'samir']);
 	}
 
 }

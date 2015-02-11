@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="process.php" method="post" enctype="multipart/form-data">
+
+    <input type="text" name="leaderName" size="30" value="Gandhi" placeholder="Enter Name"/>
+
+    <br/><br/><br/>
+
+    <textarea name="lifeStory" rows="5" cols="30" placeholder="Enter Life Story"></textarea>
+
+    <br/><br/><br/>
+
+    <input type="radio" name="yesOrNo" value="Yes"/> Yes
+    <input type="radio" name="yesOrNo" value="No"/> No
+
+    <br/><br/><br/>
+
+    <input type="checkbox" name="coursesTaken[]" value="PHP"/> PHP
+    <input type="checkbox" name="coursesTaken[]" value="MySQL"/> MySQL
+    <input type="checkbox" name="coursesTaken[]" value="Python"/> Python
+
+    <br/><br/><br/>
+
+    <select name="animals">
+        <option value="Human">Human</option>
+        <option value="Monkey">Monkey</option>
+        <option value="Goat">Goat</option>
+        <option value="Whale">Whale</option>
+    </select>
+
+    <br/><br/><br/>
+
+    <input type="file" name="myFile"/>
+
+    <br/><br/><br/>
+
+    <input type="submit" />
+</form>
+</body>
+</html>

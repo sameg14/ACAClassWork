@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+
+    Enter Name: <input type="text" id="firstName" size="30"/>
+
+    <input type="button" value="Say Hello" id="btn-submit" />
+
+    <div id="div-message"></div>
+
+</form>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+
+    $('#btn-submit').on('click', function(){
+
+        var firstName = $("#firstName").val();
+
+        $.ajax({
+            url: "process.php",
+            method : 'post',
+            data: {
+                yourName : firstName
+            },
+            success: function(data) {
+
+                $("#div-message").html(data);
+
+                console.info(data);
+            }
+        });
+
+    });
+
+
+</script>
+
+
+</body>
+</html>
